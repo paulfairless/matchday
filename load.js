@@ -1,11 +1,10 @@
 var sys = require('sys');
 var TwitterNode = require('twitter-node').TwitterNode;
 var nano = require('nano')('http://localhost:5984');
-var simpledb = require('simpledb');
 
 var twit = new TwitterNode({
-  user: 'paulfairless',
-  password: '977022',
+  user: '[username]',
+  password: '[password]',
   track: ["nufc", 'qpr']
 });
 twit.headers['User-Agent'] = 'node.js-thingy';
